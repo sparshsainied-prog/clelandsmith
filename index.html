@@ -309,12 +309,12 @@ footer p { margin: 0; }
     // the beasts prowl in from opposite corners, the near one larger and turning as it comes
     beast(bt, ease(clamp((p - .02) / .38)), 430, -380, 30);
     beast(bb, ease(clamp((p - .1) / .38)), -430, 400, -30);
-    const t = ease(clamp((p - .42) / .2));
+    const t = ease(clamp((p - .32) / .16));
     ti.style.transform = `translateY(${(60 * (1 - t)).toFixed(1)}px) scale(${(1.08 - .08 * t).toFixed(4)})`;
     ti.style.opacity = t.toFixed(3);
-    bl.style.opacity = ease(clamp((p - .58) / .1)).toFixed(3);
-    wd.style.opacity = ease(clamp((p - .66) / .12)).toFixed(3);
-    const s1 = ease(clamp((p - .24) / .08)), s2 = ease(clamp((p - .48) / .08)), s3 = ease(clamp((p - .74) / .06));
+    bl.style.opacity = ease(clamp((p - .56) / .1)).toFixed(3);
+    wd.style.opacity = ease(clamp((p - .64) / .1)).toFixed(3);
+    const s1 = ease(clamp((p - .22) / .08)), s2 = ease(clamp((p - .54) / .06)), s3 = ease(clamp((p - .76) / .05));
     show(b1, 1 - s1, -s1 * 1.5);
     show(b2, s1 * (1 - s2), (1 - s1) * 1.5 - s2 * 1.5);
     show(b3, s2 * (1 - s3), (1 - s2) * 1.5 - s3 * 1.5);
